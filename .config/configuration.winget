@@ -18,6 +18,8 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Discord
+        # Requires elevation for the set operation
+        securityContext: elevated
       settings:
         id: Discord.Discord
         source: winget
