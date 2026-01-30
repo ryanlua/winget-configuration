@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.Windows.Settings/WindowsSettings
+      directives:
+        description: Enable Developer Mode
+        allowPrerelease: true
+        # Requires elevation for the set operation
+        securityContext: elevated
+      settings:
+        DeveloperMode: true
+    - resource: Microsoft.Windows.Developer/Taskbar
+      directives:
+        description: Modify taskbar settings
+        allowPrerelease: true
+      settings:
+        TaskViewButton: Hide # [KeepCurrentValue, Hide]
+        WidgetsButton: Hide # [KeepCurrentValue, Hide]
+    - resource: Microsoft.Windows.Developer/WindowsExplorer
+      directives:
+        description: Modify Windows Explorer settings
+        allowPrerelease: true
+      settings:
+        FileExtensions: Show # [KeepCurrentValue, Hide]
+        HiddenFiles: Show # [KeepCurrentValue, Hide]
+        RestartExplorer: True # Use caution when setting `RestartExplorer: true` as this will force explorer to close. Required for all WindowsExplorer settings.
+  configurationVersion: 0.2.0
