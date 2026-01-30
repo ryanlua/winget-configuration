@@ -44,6 +44,7 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install UniGetUI
+        securityContext: elevated
       settings:
         id: MartiCliment.UniGetUI
         source: winget
