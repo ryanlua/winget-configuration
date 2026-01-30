@@ -5,7 +5,6 @@ properties:
       directives:
         description: Enable Developer Mode
         allowPrerelease: true
-        # Requires elevation for the set operation
         securityContext: elevated
       settings:
         DeveloperMode: true

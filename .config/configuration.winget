@@ -4,7 +4,6 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install AdGuard
-        # Requires elevation for the set operation
         securityContext: elevated
       settings:
         id: AdGuard.AdGuard
@@ -18,7 +17,6 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Discord
-        # Requires elevation for the set operation
         securityContext: elevated
       settings:
         id: Discord.Discord
@@ -32,7 +30,6 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Git
-        # Requires elevation for the set operation
         securityContext: elevated
       settings:
         id: Git.Git
