@@ -37,6 +37,7 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Gpg4win
+        securityContext: elevated
       settings:
         id: GnuPG.Gpg4win
         source: winget
