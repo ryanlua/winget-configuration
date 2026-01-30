@@ -43,6 +43,12 @@ properties:
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install UniGetUI
+      settings:
+        id: MartiCliment.UniGetUI
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install PowerToys
       settings:
         id: Microsoft.PowerToys
