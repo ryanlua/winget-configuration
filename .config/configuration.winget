@@ -40,6 +40,12 @@ properties:
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install Bitwarden
+      settings:
+        id: Bitwarden.Bitwarden
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install PowerToys
       settings:
         id: Microsoft.PowerToys
