@@ -4,6 +4,8 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install AdGuard
+        # Requires elevation for the set operation
+        securityContext: elevated
       settings:
         id: AdGuard.AdGuard
         source: winget
