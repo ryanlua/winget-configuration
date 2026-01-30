@@ -9,6 +9,21 @@ properties:
         securityContext: elevated
       settings:
         DeveloperMode: true
+    - resource: Microsoft.Windows.Developer/Taskbar
+      directives:
+        description: Modify taskbar settings
+        allowPrerelease: true
+      settings:
+        TaskViewButton: Hide # [KeepCurrentValue, Hide]
+        WidgetsButton: Hide # [KeepCurrentValue, Hide]
+    - resource: Microsoft.Windows.Developer/WindowsExplorer
+      directives:
+        description: Modify Windows Explorer settings
+        allowPrerelease: true
+      settings:
+        FileExtensions: Show # [KeepCurrentValue, Hide]
+        HiddenFiles: Show # [KeepCurrentValue, Hide]
+        RestartExplorer: True # Use caution when setting `RestartExplorer: true` as this will force explorer to close. Required for all WindowsExplorer settings.
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Git
