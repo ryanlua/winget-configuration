@@ -20,8 +20,6 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Visual Studio Code
-        # Requires elevation for the set operation
-        securityContext: elevated
       settings:
         id: Microsoft.VisualStudioCode
         source: winget
@@ -36,9 +34,13 @@ properties:
     #     source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install Gpg4win
+      settings:
+        id: GnuPG.Gpg4win
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install PowerToys
-        # Requires elevation for the set operation
-        securityContext: elevated
       settings:
         id: Microsoft.PowerToys
         source: winget
@@ -108,4 +110,34 @@ properties:
           Enabled: false
         RegistryPreview:
           Enabled: false
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install AdGuard
+      settings:
+        id: AdGuard.AdGuard
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Discord
+      settings:
+        id: Discord.Discord
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Figma
+      settings:
+        id: Figma.Figma
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Roblox
+      settings:
+        id: Roblox.Roblox
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Spotify
+      settings:
+        id: Spotify.Spotify
+        source: winget
   configurationVersion: 0.2.0

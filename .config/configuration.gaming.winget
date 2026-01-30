@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Steam
+      settings:
+        id: Valve.Steam
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Epic Games
+      settings:
+        id: EpicGames.EpicGamesLauncher
+        source: winget
+  configurationVersion: 0.2.0
