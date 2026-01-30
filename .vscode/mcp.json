@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "winget-mcp": {
+      "type": "stdio",
+      "command": "WindowsPackageManagerMCPServer.exe"
+    }
+  },
+  "inputs": []
+}
