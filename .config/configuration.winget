@@ -4,23 +4,21 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install AdGuard
-        securityContext: elevated
       settings:
-        id: AdGuard.AdGuard
-        source: winget
+        id: XP99BNH2JZBBQR
+        source: msstore
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Bitwarden
       settings:
-        id: Bitwarden.Bitwarden
-        source: winget
+        id: 9PJSDV0VPK04
+        source: msstore
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Discord
-        securityContext: elevated
       settings:
-        id: Discord.Discord
-        source: winget
+        id: XPDC2RH70K22MN
+        source: msstore
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Figma
@@ -44,43 +42,27 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install UniGetUI
-        securityContext: elevated
       settings:
-        id: MartiCliment.UniGetUI
-        source: winget
+        id: XPFFTQ032PTPHF
+        source: msstore
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install PowerToys
       settings:
-        id: Microsoft.PowerToys
-        source: winget
+        id: XP89DCGQ3K6VLD
+        source: msstore
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Visual Studio Code
       settings:
-        id: Microsoft.VisualStudioCode
-        source: winget
-    # - resource: Microsoft.WinGet.DSC/WinGetPackage
-    #   id: vsPackage
-    #   directives:
-    #     description: Install Visual Studio
-    #     # Requires elevation for the set operation
-    #     securityContext: elevated
-    #   settings:
-    #     id: Microsoft.VisualStudio.Community
-    #     source: winget
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      directives:
-        description: Install Roblox
-      settings:
-        id: Roblox.Roblox
-        source: winget
+        id: XP9KHM4BK9FZ7Q
+        source: msstore
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Spotify
       settings:
-        id: Spotify.Spotify
-        source: winget
+        id: 9NCBCSZSJRSB
+        source: msstore
     - resource: PowerToysConfigure
       directives:
         description: Configure PowerToys

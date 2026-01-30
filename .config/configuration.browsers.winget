@@ -11,6 +11,6 @@ properties:
       directives:
         description: Install Firefox
       settings:
-        id: Mozilla.Firefox
-        source: winget
+        id: 9NZVDKPMR9RD
+        source: msstore
   configurationVersion: 0.2.0
