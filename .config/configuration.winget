@@ -21,6 +21,12 @@ properties:
         source: msstore
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install Vencord
+      settings:
+        id: Vendicated.Vencord
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install Figma
       settings:
         id: Figma.Figma
