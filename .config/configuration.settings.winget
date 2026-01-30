@@ -8,6 +8,15 @@ properties:
         securityContext: elevated
       settings:
         DeveloperMode: true
+    - resource: Microsoft.Windows.Settings/WindowsSettings
+      directives:
+        description: Configure Personalization Settings
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        StartFolders:
+          - Settings
+          - Explorer
     - resource: Microsoft.Windows.Developer/Taskbar
       directives:
         description: Modify taskbar settings
