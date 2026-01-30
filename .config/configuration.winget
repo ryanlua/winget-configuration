@@ -25,15 +25,15 @@ properties:
       settings:
         id: Microsoft.VisualStudioCode
         source: winget
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: vsPackage
-      directives:
-        description: Install Visual Studio
-        # Requires elevation for the set operation
-        securityContext: elevated
-      settings:
-        id: Microsoft.VisualStudio.Community
-        source: winget
+    # - resource: Microsoft.WinGet.DSC/WinGetPackage
+    #   id: vsPackage
+    #   directives:
+    #     description: Install Visual Studio
+    #     # Requires elevation for the set operation
+    #     securityContext: elevated
+    #   settings:
+    #     id: Microsoft.VisualStudio.Community
+    #     source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install PowerToys
