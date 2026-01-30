@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.Windows.Settings/WindowsSettings
+      directives:
+        description: Enable Developer Mode
+        allowPrerelease: true
+        # Requires elevation for the set operation
+        securityContext: elevated
+      settings:
+        DeveloperMode: true
+  configurationVersion: 0.2.0
