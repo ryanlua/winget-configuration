@@ -13,6 +13,7 @@ properties:
         description: Modify taskbar settings
         allowPrerelease: true
       settings:
+        SearchBoxMode: Hide # [KeepCurrentValue, ShowIconOnly, SearchBox, ShowIconAndLabel]
         TaskViewButton: Hide # [KeepCurrentValue, Hide]
         WidgetsButton: Hide # [KeepCurrentValue, Hide]
     - resource: Microsoft.Windows.Developer/WindowsExplorer
