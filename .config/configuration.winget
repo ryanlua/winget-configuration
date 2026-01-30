@@ -9,4 +9,45 @@ properties:
         securityContext: elevated
       settings:
         DeveloperMode: true
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Git
+        # Requires elevation for the set operation
+        securityContext: elevated
+      settings:
+        id: Git.Git
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Visual Studio Code
+        # Requires elevation for the set operation
+        securityContext: elevated
+      settings:
+        id: Microsoft.VisualStudioCode
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: vsPackage
+      directives:
+        description: Install Visual Studio
+        # Requires elevation for the set operation
+        securityContext: elevated
+      settings:
+        id: Microsoft.VisualStudio.Community
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install PowerToys
+        # Requires elevation for the set operation
+        securityContext: elevated
+      settings:
+        id: Microsoft.PowerToys
+        source: winget
+    - resource: PowerToysConfigure
+      directives:
+        description: Configure PowerToys
+      settings:
+        ShortcutGuide:
+          Enabled: false
+        FancyZones:
+          Enabled: false
   configurationVersion: 0.2.0
