@@ -9,6 +9,12 @@ properties:
         source: msstore
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install Bitwarden
+      settings:
+        id: 9PJSDV0VPK04
+        source: msstore
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install Discord
       settings:
         id: XPDC2RH70K22MN
