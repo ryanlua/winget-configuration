@@ -36,6 +36,7 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install UniGetUI
+        securityContext: elevated
       settings:
         id: XPFFTQ032PTPHF
         source: msstore
