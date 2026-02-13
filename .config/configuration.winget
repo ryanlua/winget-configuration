@@ -28,6 +28,13 @@ properties:
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install Gpg4win
+        securityContext: elevated
+      settings:
+        id: GnuPG.Gpg4win
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install UniGetUI
         securityContext: elevated
       settings:
